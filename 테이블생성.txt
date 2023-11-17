@@ -1,0 +1,18 @@
+create table t_sawon(
+id VARCHAR2(10),
+pass VARCHAR2(10),
+name VARCHAR2(50),
+age VARCHAR2(50),
+addr VARCHAR2(50),
+dept VARCHAR2(50),
+extension VARCHAR2(50),
+no NUMBER primary key
+);
+insert into t_sawon
+values('hong', '1212', '홍길동', '24', '경기', '기술', '12345', 1);
+insert into t_sawon
+values('lee', '1234', '이순신', '31', '서울', '개발', '21574', 2);
+insert into t_sawon
+values('kim', '1546', '김유신', '21', '수원', '영업', '64642', 3);
+commit;
+select* from t_sawon;
